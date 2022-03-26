@@ -1,16 +1,3 @@
-# art
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The application is written in dart/flutter. It designed for android devices and called YesArt. It allows to study and memorise 625 world famouse paintings in English or Russian. 
+The button with a student hat allows to study. It openes a list of artists in the alphabetic order with mini images of their paitings and paiting's names. Each paiting from the list can be opened in a large formate as a card, which shows the paiting, its name, its artist's name and its style. By taping on the name of the artist a Wikipedia page is opened showing the artist's biography. By taping on the name of the paiting a page of Wikiart is opened, showing the paiting's details: dimensions, year, original name and etc. By taping on the image it is opened in a full screen. By taping on it again, it returns back to the original size. It is possible to study the list in a formate of cards or in a format of the list.  It is possible to sort the list by artist or by style. The digit in the down-rigth corner shows a number o paitings in the sorted list.
+Three buttons below are quizzes. The button from the left openes a test of style knowledge. The button in the middle openes a test of artist knowledge. The button from the right openes a painting knowledge.
