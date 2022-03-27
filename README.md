@@ -1,16 +1,6 @@
-# art
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The application is written in dart/flutter. It designed for android devices and called YesArt. It allows to study and memorise 625 world famouse paintings of 110 artists and 25 styles in English or Russian. It respects the copyright, so only paitings copyright free are exposed.
+The button with an image of a student hat allows to study. It openes a list of artists in the alphabetic order with mini images of their paitings and paiting's names. Each paiting from the list can be opened in a large formate as a card, which shows the paiting, its name, its artist's name and its style. By taping on the artists's name a Wikipedia page is opened showing the artist's biography. By taping on the the paiting's name a page of Wikiart is opened, showing the paiting's details: dimensions, year, original name and etc. By taping on the painting's image it is opened in a full screen. By taping on it again, it gets the original size. It is possible to study the list in a formate of cards by taping arrows left and right under each card.  It is possible to sort the list by artist or by style. The digit in the down-rigth corner shows a number of paitings in the sorted list.
+Three buttons with images of a curve, a brush and a pallette are quizzes: the curve is a test of style knowledge, the brush - a test of artist knowledge, the pallete - a test of painting knowledge.
+Приложение написано на dart/flutter. Оно разработано для устройств Android и называется YesArt. Оно позволяет изучить и запомнить 625 всемирно известных картин 110 художников и 25 стилей на английском или русском языках. Приложение уважает авторские права, поэтому выставляются только картины, на которые не наложено авторское право.
+Кнопка с изображением студенческой шляпы позволяет изучить картины. С помощью нее Открывается список художников в алфавитном порядке с мини-изображениями их картин и названиями картин. Каждую картину из списка можно открыть в большом формате в виде карточки, на которой показана картина, ее название, имя художника и стиль. При нажатии на имя художника открывается страница Википедии с биографией художника н соответсвующем выбранному языке. При нажатии на название картины открывается страница Викиарта, показывающая детали картины: размеры, год, оригинальное название и т. д. При нажатии на изображение картины оно открывается в полноэкранном режиме. При повторном нажатии на нее она приобретает исходный размер. Можно изучать список картин в формате карт, нажимая стрелки под каждой картой влево и вправо. Возможна сортировка списка по художнику или по стилю. Цифра в правом нижнем углу показывает количество картин в отсортированном списке.
+Три кнопки с изображениями кривой, кисти и палитры - это викторины: кривая - тест на знание стиля, кисть - тест на знание художника, палитра - тест на знание живописи.
