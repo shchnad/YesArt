@@ -31,33 +31,14 @@ dependencies:
     sdk: flutter
 
 
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.2
   auto_size_text: ^3.0.0
   url_launcher: ^6.0.17
   audioplayers: ^0.20.1
   async: ^2.8.1
-  flutter_lints: ^1.0.4
 
 
-dev_dependencies:
-  flutter_launcher_icons: ^0.9.2
-  flutter_lints: ^1.0.4
   flutter_test:
     sdk: flutter
-
-flutter_icons:
-  android: "launcher_icon"
-  ios: true
-  image_path: "assets/icons/yes_art.png"
-
-  # The "flutter_lints" package below contains a set of recommended lints to
-  # encourage good coding practices. The lint set provided by the package is
-  # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
-  # rules and activating additional ones.
-  flutter_lints: ^1.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -92,14 +73,6 @@ flutter:
     - family: BebasNeue
       fonts:
         - asset: assets/fonts/BebasNeue-Regular.ttf
-
-    - family: Pacifico
-      fonts:
-        - asset: assets/fonts/Pacifico-Regular.ttf
-
-    - family: RockSalt
-      fonts:
-        - asset: assets/fonts/RockSalt-Regular.ttf
 
   #   - family: Schyler
   #     fonts:
