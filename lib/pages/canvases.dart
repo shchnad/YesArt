@@ -36,7 +36,6 @@ class _CanvasesState extends State<Canvases> {
   var artist;
   String parametrOfFilter = 'string';
 
-
   @override
   Widget build(BuildContext context) {
 
@@ -48,15 +47,9 @@ class _CanvasesState extends State<Canvases> {
        data = filterData(widget.data, style, artist, widget.allStylesName, widget.allArtistsName, parametrOfFilter);
        }
 
-     print('total styles: ${widget.stylesList.length}');
-     print('total styles: ${widget.stylesList}');
-     print('total artists: ${widget.artistsList.length}');
-     print('total artists: ${widget.artistsList}');
-
       data.sort((a, b) => a.artist.compareTo(b.artist));
 
        return Scaffold(
-         // backgroundColor: Colors.black,
            appBar: AppBar(
              backgroundColor: Theme.of(context).accentColor,
              automaticallyImplyLeading: false,
@@ -106,7 +99,7 @@ class _CanvasesState extends State<Canvases> {
                        child: LayoutBuilder(builder: (context, constraint) {
                          return Icon(
                            Icons.clear,
-                           size: 25,
+                           size: 20,
                            color: Colors.black,
                          );
                        }),
@@ -150,7 +143,6 @@ class _CanvasesState extends State<Canvases> {
                              };
                            });
                          },
-                         // dropdownColor: Theme.of(context).accentColor,
                          dropdownColor: Theme.of(context).accentColor,
                          style: TextStyle(color: Colors.black, fontSize: 20),
                        ),
@@ -170,7 +162,6 @@ class _CanvasesState extends State<Canvases> {
                  ),
                ],
              ),
-
            ),
            body: SafeArea(
              child: Padding(

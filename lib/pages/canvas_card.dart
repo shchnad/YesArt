@@ -42,7 +42,6 @@ class _CanvasCardState extends State<CanvasCard> {
     urlWikiArtist = urlOfArtist(artistUrl, dataList[dataIndex].artist);
 
     return Scaffold(
-        // backgroundColor: Colors.black,
         appBar: AppBar(
           automaticallyImplyLeading: false,
           backgroundColor: Theme.of(context).accentColor,
@@ -53,22 +52,6 @@ class _CanvasCardState extends State<CanvasCard> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  // InkWell(
-                  //   onTap: () {
-                  //     launchURL(urlWikiArtist);
-                  //   },
-                  //   child: Container(
-                  //     width: (MediaQuery.of(context).size.width) / 8,
-                  //     child: LayoutBuilder(builder: (context, constraint) {
-                  //       return Icon(
-                  //         Icons.search,
-                  //         // size: constraint.biggest.height,
-                  //         size: 30,
-                  //         color: Colors.blue,
-                  //       );
-                  //     }),
-                  //   ),
-                  // ),
                   Container(
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
@@ -121,10 +104,8 @@ class _CanvasCardState extends State<CanvasCard> {
                                   AutoSizeText('${(dataList[dataIndex].artist)}',
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
-                                        //color: Theme.of(context).primaryColor,
                                         color: Colors.blue,
                                         fontSize: 20,
-                                        // fontWeight: FontWeight.w700,
                                       )),
                             ),
                           ),
@@ -161,7 +142,6 @@ class _CanvasCardState extends State<CanvasCard> {
                                   style: TextStyle(
                                     color: Colors.red,
                                     fontSize: 20,
-                                    // fontWeight: FontWeight.w700,
                                   )),
                             ),
                           ),
@@ -178,7 +158,6 @@ class _CanvasCardState extends State<CanvasCard> {
                                 style: TextStyle(
                                   color: Colors.red,
                                   fontSize: 5,
-                                  // fontWeight: FontWeight.w700,
                                 )),
                           ),
                         ),
@@ -216,9 +195,7 @@ class _CanvasCardState extends State<CanvasCard> {
                             padding: const EdgeInsets.all(15.0),
                             child: Icon(
                               Icons.navigate_before,
-                              // size: constraint.biggest.height,
                               size: 30,
-                              // color: Colors.white,
                             ),
                           );
                         }),
@@ -229,15 +206,16 @@ class _CanvasCardState extends State<CanvasCard> {
                         Navigator.pop(context, {});
                       },
                       child: Container(
-                        width: (MediaQuery.of(context).size.width) / 5,
                         child: LayoutBuilder(builder: (context, constraint) {
                           return Padding(
                             padding: const EdgeInsets.all(15.0),
-                            child: Icon(
-                              Icons.clear,
-                              // size: constraint.biggest.height,
-                              size: 30,
-                              // color: Colors.white,
+                            child: Container(
+                              width: 20,
+                              child: Icon(
+                                Icons.clear,
+                                size: 25,
+                                color: Colors.black,
+                              ),
                             ),
                           );
                         }),
@@ -262,9 +240,7 @@ class _CanvasCardState extends State<CanvasCard> {
                             padding: const EdgeInsets.all(15.0),
                             child: Icon(
                               Icons.navigate_next,
-                              // size: constraint.biggest.height,
                               size: 30,
-                              // color: Colors.white,
                             ),
                           );
                         }),
