@@ -94,9 +94,6 @@ class _QuizzState extends State<Quizz> {
             'artistUrl': widget.artistUrl,
           });
         } else {
-          // AudioCache player = new AudioCache();
-          // const alarmAudioPath = "yes.mp3";
-          // player.play(alarmAudioPath);
           widget.score++;
           Navigator.pushReplacement(
               context,
@@ -107,7 +104,6 @@ class _QuizzState extends State<Quizz> {
     }
 
     return Scaffold(
-      // backgroundColor: Colors.black,
         appBar: AppBar(
           automaticallyImplyLeading: false,
           backgroundColor: Theme.of(context).accentColor,
@@ -132,8 +128,7 @@ class _QuizzState extends State<Quizz> {
                     child: LayoutBuilder(builder: (context, constraint) {
                       return Icon(
                         Icons.clear,
-                        // size: constraint.biggest.height,
-                        size: 30,
+                        size: 20,
                         color: Colors.black,
                       );
                     }),
@@ -149,7 +144,7 @@ class _QuizzState extends State<Quizz> {
               Center(
                   child: Column(children: [
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(5.0),
                       child: Container(
                         decoration: BoxDecoration(
                           color: Theme.of(context).accentColor,
@@ -175,14 +170,13 @@ class _QuizzState extends State<Quizz> {
                             ),
                             Container(
                               child: Padding(
-                                padding: const EdgeInsets.all(8.0),
+                                padding: const EdgeInsets.all(5.0),
                                 child: AutoSizeText(
                                     widget.quizzType == 'easy' ? '${widget.data[randomIndex].artist}' : '',
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                       color: Colors.blue,
                                       fontSize: 20,
-                                      // fontWeight: FontWeight.w700,
                                     )),
                               ),
                             ),
@@ -234,19 +228,15 @@ class _QuizzState extends State<Quizz> {
                                     style: TextStyle(
                                       color: Colors.red,
                                       fontSize: 5,
-                                      // fontWeight: FontWeight.w700,
                                     )),
                               ),
                             ),
                             SizedBox(
-                              height: 20,
+                              height: 5,
                             ),
                           ],
                         ),
                       ),
-                    ),
-                    SizedBox(
-                      height: 5,
                     ),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.start,
